@@ -1,5 +1,5 @@
 *.exe
-*.ikl
+*.ilk
 *.obj
 *.pdb
 vc140.pdb
