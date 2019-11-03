@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [
-                "HiepSiDeChe.png"
+                // "HiepSiDeChe.png"
             ],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",

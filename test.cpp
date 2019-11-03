@@ -9,6 +9,7 @@ int main(int argc, char** argv) {
     Mat raw_image, cur_image;
     if (argc == 1) {
         VideoCapture camera(0);
+        waitKey(1000);
         if (!camera.read(raw_image)) {
             cout << "Could not capture image from camera" << endl;
             return -1;
@@ -22,8 +23,6 @@ int main(int argc, char** argv) {
             return -1;
         }
     }
-    // auto original_image = image;
-    // image = (image, COLOR_BGR2GRAY);
     namedWindow("Display window",
                 WINDOW_NORMAL);           // Create a window for display.
     imshow("Display window", raw_image);  // Show our image inside it.
