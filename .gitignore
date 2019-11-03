@@ -12,6 +12,8 @@ vc140.pdb
 
 #osx builded file
 /*.dSYM
+
+#osx builded executable file
 *
 !*/
 !*.*
