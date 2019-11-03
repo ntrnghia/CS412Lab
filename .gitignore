@@ -1,3 +1,11 @@
+#osx builded executable file
+*
+!*/
+!*.*
+
+#osx builded file
+/*.dSYM
+
 #Windows builded file
 *.exe
 *.ilk
@@ -9,11 +17,3 @@ vc140.pdb
 
 #.vscode file
 .vscode/settings.json
-
-#osx builded file
-/*.dSYM
-
-#osx builded executable file
-*
-!*/
-!*.*
