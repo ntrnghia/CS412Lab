@@ -6,20 +6,39 @@
         {
             "type": "shell",
             "label": "cl.exe build active file",
-            "command": "cl.exe",
-            "args": [
-                "/Zi",
-                "/EHsc",
-                "/Fe:",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "${file}",
-                "/I",
-                "C:\\opencv\\build\\include",
-                "opencv_world412.lib",
-                "opencv_world412d.lib",
-                "/link",
-                "/LIBPATH:C:\\opencv\\build\\x64\\vc15\\lib"
-            ],
+            "windows": {
+                "command": "cl.exe",
+                "args": [
+                    "/Zi",
+                    "/EHsc",
+                    "/Fe:",
+                    "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                    "${file}",
+                    "/I",
+                    "C:\\opencv\\build\\include",
+                    "opencv_world412.lib",
+                    "opencv_world412d.lib",
+                    "/link",
+                    "/LIBPATH:C:\\opencv\\build\\x64\\vc15\\lib"
+                ],
+            },
+            "osx": {
+                "command": "/usr/bin/g++",
+                "args": [
+                    "$(pkg-config",
+                    "--cflags",
+                    "--libs",
+                    "opencv4)",
+                    "-std=c++17",
+                    "-g",
+                    "${file}",
+                    "-o",
+                    "${fileDirname}/${fileBasenameNoExtension}"
+                ],
+                "options": {
+                    "cwd": "/usr/bin"
+                },
+            },
             "problemMatcher": [
                 "$gcc"
             ],

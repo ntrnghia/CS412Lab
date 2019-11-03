@@ -1,0 +1,5 @@
+*.exe
+*.ikl
+*.obj
+*.pdb
+vc140.pdb
