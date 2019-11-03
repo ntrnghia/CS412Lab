@@ -9,3 +9,7 @@ vc140.pdb
 
 #.vscode file
 .vscode/settings.json
+
+#osx builded file
+/*.dSYM
+test
