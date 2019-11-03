@@ -15,7 +15,12 @@
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
             "environment": [],
-            "externalConsole": true
+            "externalConsole": true,
+            "osx": {
+                "type": "lldb",
+                "request": "launch",
+                "program": "${fileDirname}/${fileBasenameNoExtension}",
+            }
         }
     ]
 }
