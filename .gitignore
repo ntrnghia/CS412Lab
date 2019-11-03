@@ -1,5 +1,11 @@
+#Windows builded file
 *.exe
 *.ilk
 *.obj
 *.pdb
+
+#MSVC file
 vc140.pdb
+
+#.vscode file
+.vscode/settings.json
